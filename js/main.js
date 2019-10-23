@@ -10,16 +10,13 @@ $("#btnAdd").click(function() {
   // タスクをリストに追加する
   $("#todoList").append(
     '<li><span>' + $("#inputTask").val() + '</span>'
-    + '   <input type="button" id="delete" value="削除"></input></li>'
+    + '   <input type="button" class="delete" value="削除" onclick="deleteTask(this)"></input></li>'
   )
   // タスクをブランクにする
-  $('#inputTask').val(''); 
+  $('#inputTask').val('');
 });
 
-// 削除ボタンを押した時の処理
-$('.delete').on("click", function() {
-  $(this).closest("li").remove();
-});
-
-
+function deleteTask(element) {
+  $(element).closest("li").remove();
+}
 
