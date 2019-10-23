@@ -12,7 +12,6 @@ $("#btnAdd").click(function() {
     '<li><span>' + $("#inputTask").val() + '</span>'
     + '   <input type="button" id="delete" value="削除"></input></li>'
   )
-  // id をclassにした方がいいかもかもかも
   // タスクをブランクにする
   $('#inputTask').val(''); 
 });
@@ -22,7 +21,5 @@ $('.delete').on("click", function() {
   $(this).closest("li").remove();
 });
 
-//ドキュメント全体にイベント　パフォーマンス的に
-//ドキュメント全体をいじるのはあまりしないほうがいい
 
 
