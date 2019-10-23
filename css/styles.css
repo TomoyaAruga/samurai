@@ -1,0 +1,21 @@
+body {
+  background: #4d639f;
+  color: white;
+  text-align: center;
+}
+
+#addingTask {
+  font-weight: bold;
+}
+
+#todoList {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  border: 1px solid;
+  width: 15em;
+  margin: 10px auto;
+  word-wrap: break-word;
+}
